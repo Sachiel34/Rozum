@@ -1,0 +1,121 @@
+!!! INFO: =============== Starting RR robot controller v01.0.0
+!!! INFO: 'p90v5' robot selected
+!!! INFO: 'cb3x' controlbox selected
+!!! INFO: friction table /etc/cloop/friction_p75v4-sn723.cfg loaded
+!!! INFO: =============== Control socket protocol version 0x02000100
+!!! INFO: 'PULSE' robot driver selected
+!!! INFO: Starting EC-CAN gate poll thread
+!!! INFO: Calculated minor tick count: 3
+!!! INFO: Desired/actual minor cycle time: 0.001000/0.001001
+!!! INFO: starting ctrl receive task
+!!! INFO: CB state changed CB_STATE_DEINIT -> CB_STATE_OFF
+!!! INFO: starting CAN External receive task
+!!! INFO: accepting ctrl sock connection
+!!! INFO: accepting RTD sock connection
+!!! INFO: RTD data size 124
+!!! INFO: connection unlocked
+!!! INFO: CB state changed CB_STATE_OFF -> CB_STATE_SCAN
+!!! INFO: ECAT scan task started
+!!! ERROR: can't set IO cycl ingore timeout
+!!! INFO: ECAT scan attempt
+!!! INFO: IO found at position 1
+  slave #1
+    name:        09/01/02
+    input bits:  688
+    output bits: 312
+!!! INFO: ECAT scan succeeded
+!!! INFO: CB state changed CB_STATE_SCAN -> CB_STATE_RESET
+!!! INFO: CBOX error: IO x10 CB x0 | CYCL_CTRL_TO |
+!!! INFO: CBOX no error
+!!! INFO: CB state changed CB_STATE_RESET -> CB_STATE_CHECK
+!!! INFO: CB state changed CB_STATE_CHECK -> CB_STATE_STBY_WAIT
+!!! INFO: CB state changed CB_STATE_STBY_WAIT -> CB_STATE_STBY
+!!! INFO: CB state changed CB_STATE_STBY -> CB_STATE_ON
+!!! INFO: CB state changed CB_STATE_ON -> CB_STATE_ROBOT_INIT
+!!! INFO: Robot init task started
+!!! INFO: Pulse robot init attempt
+!!! INFO: Waiting (5s) servos on CAN bus ...
+!!! INFO: all servos are pre-operational
+!!! INFO: CANopen device: #0, ID: 32, name : 'Servo 85-1':
+  0x1008: Servo v5 85
+  0x1009: 20333436_46335019_004D0033.0016.000C
+  0x100a: 1.2.3.20211015_092535.feature/#29*@maksimkatkou-Inspiron-7577
+!!! INFO: CANopen device: #1, ID: 33, name : 'Servo 85-2':
+  0x1008: Servo v5 85
+  0x1009: 20333436_46335019_00230033.0016.000C
+  0x100a: 1.2.3.20211015_092535.feature/#29*@maksimkatkou-Inspiron-7577
+!!! INFO: CANopen device: #2, ID: 34, name : 'Servo 60-1':
+  0x1008: Servo v4 60
+  0x1009: 2039354B_57485004_0023004E.0015.000B
+  0x100a: 1.2.3.20211015_092535.feature/#29*@maksimkatkou-Inspiron-7577
+!!! INFO: CANopen device: #3, ID: 35, name : 'Servo 60-2':
+  0x1008: Servo v4 60
+  0x1009: 36343532_34365102_00230051.0015.000B
+  0x100a: 1.2.3.20211015_092535.feature/#29*@maksimkatkou-Inspiron-7577
+!!! INFO: CANopen device: #4, ID: 36, name : 'Servo 50-1':
+  0x1008: Servo v4 50
+  0x1009: 36343532_34365103_002E0026.0015.000A
+  0x100a: 1.2.3.20211015_092535.feature/#29*@maksimkatkou-Inspiron-7577
+!!! INFO: CANopen device: #5, ID: 37, name : 'Servo 50-2':
+  0x1008: Servo v4 50
+  0x1009: 20313252_4D4B5013_0038004F.0015.000A
+  0x100a: 1.2.3.20211015_092535.feature/#29*@maksimkatkou-Inspiron-7577
+!!! INFO: CANopen device: #6, ID: 16, name : 'Wrist':
+  0x1008: wrist
+  0x1009: 00210048_55345706_20383336.FFFF.FFFF
+  0x100a: 2.0.0
+!!! INFO: all servos are operational
+!!! INFO: Robot init task finished
+!!! INFO: CB state changed CB_STATE_ROBOT_INIT -> CB_STATE_RUN
+Calibration start
+Position has changed since last launch, calculating offsets.
+Big offset[0]: 0.000000
+Big offset[1]: 0.000000
+Big offset[2]: 360.000000
+Big offset[3]: 0.000000
+Big offset[4]: 0.000000
+Big offset[5]: 0.000000
+Initialized, potentially needs manual calibration
+!!! INFO: EMERGENCY: id: 16, name: Wrist, code: 0x0000, reg: 0x00, MSEF: 0x01 0x00 0x00 0x00 0x00
+    code: 'error Reset or No Error'
+!!! INFO: EMERGENCY: id: 37, name: Servo 50-2, code: 0x0000, reg: 0x00, MSEF: 0x01 0x01 0x00 0x00 0x62
+    code: 'error Reset or No Error'
+!!! INFO: EMERGENCY: id: 33, name: Servo 85-2, code: 0x0000, reg: 0x00, MSEF: 0x01 0x01 0x00 0x60 0x00
+    code: 'error Reset or No Error'
+!!! WARNING: TPDO lost @ device id: 2, tpdo: 0
+!!! WARNING: TPDO lost @ device id: 3, tpdo: 0
+!!! WARNING: TPDO lost @ device id: 4, tpdo: 0
+!!! INFO: EMERGENCY: id: 16, name: Wrist, code: 0x8120, reg: 0x00, MSEF: 0x06 0x00 0x00 0x00 0x00
+    code: 'Communication'
+!!! WARNING: TPDO lost @ device id: 1, tpdo: 0
+!!! WARNING: TPDO received 2 times @ device id: 2, tpdo: 0
+!!! WARNING: TPDO received 2 times @ device id: 3, tpdo: 0
+!!! WARNING: TPDO received 2 times @ device id: 4, tpdo: 0
+!!! WARNING: TPDO lost @ device id: 5, tpdo: 0
+!!! WARNING: TPDO lost @ device id: 1, tpdo: 1
+!!! WARNING: TPDO lost @ device id: 5, tpdo: 1
+!!! WARNING: TPDO lost @ wrist, tpdo: 0
+!!! INFO: EMERGENCY: id: 16, name: Wrist, code: 0x0000, reg: 0x00, MSEF: 0x06 0x00 0x00 0x00 0x00
+    code: 'error Reset or No Error'
+!!! INFO: EMERGENCY: id: 16, name: Wrist, code: 0x8120, reg: 0x00, MSEF: 0x06 0x00 0x00 0x00 0x00
+    code: 'Communication'
+!!! INFO: EMERGENCY: id: 32, name: Servo 85-1, code: 0x0000, reg: 0x00, MSEF: 0x01 0x01 0x00 0x64 0x00
+    code: 'error Reset or No Error'
+!!! WARNING: TPDO lost @ device id: 1, tpdo: 0
+!!! WARNING: TPDO lost @ device id: 5, tpdo: 0
+!!! WARNING: TPDO lost @ device id: 1, tpdo: 1
+!!! WARNING: TPDO lost @ device id: 5, tpdo: 1
+!!! INFO: EMERGENCY: id: 16, name: Wrist, code: 0x0000, reg: 0x00, MSEF: 0x06 0x00 0x00 0x00 0x00
+    code: 'error Reset or No Error'
+!!! INFO: EMERGENCY: id: 37, name: Servo 50-2, code: 0x8120, reg: 0x80, MSEF: 0x07 0x03 0x00 0x00 0xfd
+    code: 'Communication'
+!!! WARNING: TPDO lost @ device id: 0, tpdo: 0
+!!! WARNING: TPDO lost @ device id: 1, tpdo: 0
+!!! ERROR FATAL: TPDO loss threshold reached @ device id: 1, tpdo: 0
+!!! WARNING: TPDO lost @ device id: 5, tpdo: 0
+!!! ERROR FATAL: TPDO loss threshold reached @ device id: 5, tpdo: 0
+!!! WARNING: TPDO lost @ device id: 1, tpdo: 1
+!!! WARNING: TPDO lost @ device id: 5, tpdo: 1
+!!! ERROR: input data sanity check failed
+!!! ERROR: Pulse robot reported en error
+!!! INFO: CB state changed CB_STATE_RUN -> CB_STATE_FAILURE
